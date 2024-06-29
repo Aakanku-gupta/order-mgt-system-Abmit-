@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <title>UTI</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <link href="../assets/css_1/bootstrap.min_v5.1.3.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <link href="../assets/css/font-awesome.min.css" rel="stylesheet"> -->
+    <!-- <link href="../assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
+    <link
+      href="../assets/bootstrap-icons_1/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="../assets/css_1/main.css" rel="stylesheet" />
+    <!-- <link href="../assets/css/main.css" rel="stylesheet"> -->
+    <link href="../assets/css_1/style.css" rel="stylesheet" />
+    <!-- <link href="../assets/css/style.css" rel="stylesheet">  -->
+    <!-- <link href="../assets/css/bootstrap-n.css" rel="stylesheet"/> -->
+    <link href="../assets/css_1/bootstrap-n.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <style>
+    .form-select {
+      font-size: 12px;
+    }
+
+    .login_oueter input::placeholder{
+  color: black;
+}
+  </style>
+
+  <body id="sidebar">
+    <!-- header start -->
+    <div uti-include-html="../includes/header1.html"></div>
+    <!-- header end -->
+
+    <!-- sidebar start -->
+    <div uti-include-html="../includes/sidebar.html"></div>
+    <!-- sidebar end -->
+    <main id="main" class="main">
+      <section class="section dashboard">
+        <div class="bg-white p-3 border">
+          <div class="row">
+            <div class="col-md-8" style="height: 60px">
+              <h4>ENTRY SCREEN</h4>
+            </div>
+           
+            <hr style="margin-bottom: 0px; width: 98%; margin-left: 5px" />
+            <!-- Second sub tab start -->
+            <div
+              class="tab-pane fade"
+              id="schedule"
+              role="tabpanel"
+              aria-labelledby="schedule-tab"
+            >
+              <div class="col-md-12 mt-2">
+                <div class="row">
+                  <!-- 1 -->
+
+                  <div class="col-md-4">
+                    <label class="mt-4"
+                      >Sr. No.<span id="Label5" style="color: #cc0000"
+                        >*</span
+                      ></label
+                    >
+                    <input type="number" class="form-control" />
+                  </div>
+
+                  <div class="col-md-4">
+                    <label class="mt-4">SEBI and/or SAT/ Court's Order Number </label>
+                    <input type="tel" class="form-control" />
+                    <div
+                      class="mt-2"
+                      id="otherInputContainer"
+                      style="display: none"
+                    >
+                      <input
+                        type="text"
+                        id="otherInput"
+                        class="form-control"
+                        placeholder="Enter Other Source"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <label class="mt-4">Date of Order </label>
+                    <input type="date" placeholder="" class="form-control" />
+                  </div>
+
+                  
+                </div>
+                <!-- 2 -->
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <label class="mt-4"
+                      >Nature of Directions
+                    </label>
+                    <textarea class="form-control" name="" rows="4" cols="5"></textarea>
+                  </div>
+
+                 
+
+                  <div class="col-md-4">
+                    <label class="mt-4"
+                      >Implementation Status
+                      
+                    </label>
+                    <textarea class="form-control" name="" rows="4" cols="5"></textarea>
+                  
+                  </div>
+
+                  <div class="col-md-4">
+                    <label class="mt-4"
+                      >Date of implementation
+                     
+                    </label>
+                    <input type="date" class="form-control" />
+                  </div>
+
+                  <div class="col-md-4">
+                    <label class="mt-4"
+                      >If not implemented,reason for the same</label
+                    >
+                    <textarea class="form-control" name="" rows="4" cols="5"></textarea>
+                  </div>
+                 
+
+                 
+                </div>
+
+                <!-- 3rd Row Start here -->
+
+                <div class="row">
+                  
+                  
+                </div>
+              </div>
+
+              <!--  Second sub tab end-->
+
+              <!-- Third sub tab start -->
+            </div>
+          </div>
+        </div>
+       
+      
+
+        <div class="row">
+          <div class="col-md-6 mt-5">
+           
+            
+
+            <a href="entry_screen.html"><button
+              type="button"
+              style="position: relative; top: 5px"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              Submit
+            </button></a>
+
+            <button
+              type="button"
+              style="position: relative; top: 5px"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              Cancel
+            </button>
+
+            
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- <footer id="footer" class="footer">
+    <div class="copyright">&copy; Copyright <strong><span>UTI</span></strong>
+      <script type="text/javascript">
+        var d = new Date();
+        yr = d.getFullYear();
+        document.write(yr);
+
+        $(document).ready(function () {
+          $('#action').multiselect();
+        });   
+      </script>. All Rights Reserved
+    </div>
+  </footer> -->
+    <script>
+      function actinbtn() {
+        // Clone the first row of the table body
+        var cloneRow = document
+          .querySelector("#tableclone tbody tr")
+          .cloneNode(true);
+
+        // Append the cloned row to the table body
+        document.querySelector("#tableclone tbody").appendChild(cloneRow);
+      }
+
+      function dltbtn(button) {
+        // Get the table row to be deleted
+        var row = button.closest("tr");
+
+        // Remove the row from the table
+        row.parentNode.removeChild(row);
+      }
+    </script>
+
+    <script src="../assets/js_1/bootstrap.bundle.min_v5.1.3.js"></script>
+    <!-- <script src="../assets/js/bootstrap.bundle.min_v5.1.3.js"></script> -->
+    <script src="../assets/js_1/jquery-2.2.4.min.js"></script>
+    <!-- <script src="../assets/js/jquery-2.2.4.min.js"></script> -->
+    <script src="../assets/js_1/jquery.multi-select.js"></script>
+    <!-- <script src="../assets/js/jquery.multi-select.js"></script> -->
+    <script src="../assets/js_1/main.js"></script>
+    <!-- <script src="../assets/js/main.js"></script> -->
+    <script src="../assets/js_1/uti.js"></script>
+    <!-- <script src="../assets/js/uti.js"></script> -->
+    <script src="../assets/js_1/custom.js"></script>
+    <!-- <script src="../assets/js/custom.js"></script> -->
+
+    <script>
+      var onClick = function () {};
+
+      // $('#button').click(onClick);
+
+      $("#button2").click(function () {
+        alert("Are you sure to proceed?");
+      });
+      $("#myModal").on("shown.bs.modal", function () {
+        $("#myInput").trigger("focus");
+      });
+      // aaa
+      var acc = document.getElementsByClassName("accordion");
+
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+
+          var panel = this.nextElementSibling;
+
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+    <script>
+      function myFunction() {
+        alert("Data save successfully");
+      }
+      // toggle script
+
+      var innerSidebar = function () {
+        $("#sidebar").toggleClass("toggle-sidebar");
+      };
+
+      // toggle script
+    </script>
+    <script>
+      function myFunction2() {
+        alert("Wrong Data Found Please Check Again");
+      }
+    </script>
+    <script>
+      function myFunction() {
+        alert("Data Save successfully");
+      }
+    </script>
+    <script>
+      function myFunction2() {
+        alert("Wrong Data Found Please Check Again");
+      }
+    </script>
+    <script>
+      function showCheckboxes() {
+        var checkboxes = document.getElementById("checkboxes");
+
+        if (!expanded) {
+          checkboxes.style.display = "block";
+
+          expanded = true;
+        } else {
+          checkboxes.style.display = "none";
+
+          expanded = false;
+        }
+      }
+    </script>
+    <script>
+      document.getElementById("select-all1").onclick = function () {
+        var checkboxes = document.getElementsByName("master");
+        for (var checkbox of checkboxes) {
+          checkbox.checked = this.checked;
+        }
+      };
+    </script>
+    <script>
+      function showInputField() {
+        var selectElement = document.getElementById("cars");
+        var otherInputContainer = document.getElementById(
+          "otherInputContainer"
+        );
+
+        if (selectElement.value === "other") {
+          otherInputContainer.style.display = "block";
+        } else {
+          otherInputContainer.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
